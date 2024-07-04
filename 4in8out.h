@@ -43,13 +43,13 @@ class M5Stack_4in8out : public Component, public i2c::I2CDevice {
  public:
   void set_switchMode(bool mode);
 
-  void inputReadAll();
+  // void inputReadAll();
    
-  void inputRead(uint8_t number);
+  void getInput(uint8_t number);
 
-  //void relayAll(bool state);
+  void setAllOutput(bool state);
 
-  void outputWrite(uint8_t number, bool state);
+  void setOutput(uint8_t number, bool state);
 
  protected:
   void write1Byte(uint8_t register_address, uint8_t data);
