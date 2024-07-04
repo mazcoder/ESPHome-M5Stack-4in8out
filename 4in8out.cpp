@@ -4,20 +4,20 @@
 namespace esphome {
 namespace M5Stack_4in8out {
 
-static const char *const TAG = "M5Stack_4_Relays";
+static const char *const TAG = "M5Stack_4in8out";
 
-void M5Stack_4_Relays::dump_config() {
-  ESP_LOGCONFIG(TAG, "M5Stack_4_Relays:");
+void M5Stack_4in8out::dump_config() {
+  ESP_LOGCONFIG(TAG, "M5Stack_4in8out:");
   LOG_I2C_DEVICE(this);
   //if (this->is_failed()) {
-  //  ESP_LOGE(TAG, "Communication with M5Stack_4_Relays failed!");
+  //  ESP_LOGE(TAG, "Communication with M5Stack_4in8out failed!");
   //}
-  /* LOG_SWITCH("  ", "Relays", this);*/
+  /* LOG_SWITCH("  ", "M5 Module (not sure what this does)", this);*/
 }
 
 /*! @brief Setting the mode of the device, and turn off all relays.
  *  @param mode Async = 0, Sync = 1. */
-void M5Stack_4_Relays::Init(bool mode) {
+void M5Stack_4in8out::Init(bool mode) {
   write1Byte(UNIT_4RELAY_REG, mode);
   write1Byte(UNIT_4RELAY_RELAY_REG, 0);
 }
