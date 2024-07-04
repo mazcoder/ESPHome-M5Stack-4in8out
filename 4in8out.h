@@ -34,7 +34,7 @@ namespace M5Stack_4in8out {
 
 /* static constexpr uint8_t UNIT_4IN8OUT_ADDR = 0X45;*/
 static constexpr uint8_t UNIT_4IN8OUT_INPUT_REG = 0X10;
-static constexpr uint8_t UNIT_4RELAY_OUTPUT_REG = 0X20;
+static constexpr uint8_t UNIT_4IN8OUT_OUTPUT_REG = 0X20;
 
 enum class OutputBit : uint8_t { OUTPUT1 = 0, OUTPUT2 = 1, OUTPUT3 = 2, OUTPUT4 = 3, OUTPUT5 = 4, OUTPUT6 = 5, OUTPUT7 = 6, OUTPUT8 = 7 };//, RELAYALL = 255};
 enum class InputBit : uint8_t { INPUT1 = 0, INPUT2 = 1, INPUT3 = 2, INPUT4 = 3, INPUTALL = 255 };
