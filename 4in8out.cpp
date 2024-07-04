@@ -18,8 +18,8 @@ void M5Stack_4in8out::dump_config() {
 /*! @brief Setting the mode of the device, and turn off all relays.
  *  @param mode Async = 0, Sync = 1. */
 void M5Stack_4in8out::Init(bool mode) {
-  write1Byte(UNIT_4RELAY_REG, mode);
-  write1Byte(UNIT_4RELAY_RELAY_REG, 0);
+  // write1Byte(UNIT_4RELAY_REG, mode);
+  // write1Byte(UNIT_4RELAY_RELAY_REG, 0);
 }
 //
 ///*! @brief Set the mode of all leds at the same time.
